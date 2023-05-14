@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+	padding: 0;
+}
+body {
+  font-family: raleway_f, sans-serif;
+  line-height: 2;
+  color: white;
+}
+/*1*/
+.main {
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	background-color: #7a7f85;
+	text-align: center;
+	display: grid;
+	grid-template-rows: 50% 50%;
+	align-items: center;
+	justify-content: center;
+}
+.description {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+#elbrus {
+	height: 40vh;
+	width: 50vh;
+}
+/*2*/
+.about {
+	height: 1760px;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	background-color: #7a7f85;
+	text-align: left;
+	display: grid;
+	grid-template-columns: 30% 69%;
+	grid-template-rows: 19% 19% 19% 19% 19%;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	gap: 3px;
+	font-size: 0.9em;
+}
+.block { 
+	background-color: rgba(205, 214, 219, 0.3);
+    display: block;
+	height: 95%;
+	width: 90%;
+}
+.blockimg, .blockimg2 { 
+	background-color: rgba(205, 214, 219, 0.3);
+	display: block;
+	height: 95%;
+	width: 90%;
+	position: relative
+}
+.blockimg > img {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(2%, -50%)
+}
+.blockimg2 > img {
+	margin: 0;
+	max-height:98%;
+	position: absolute;
+	top: 50%;
+	transform: translate(15%, -50%)
+}
+@media only screen and (min-width: 1200px) {
+	.blockimg > img {
+		max-height: 100%;
+	}	
+}
+@media only screen and (min-width: 768px) and (max-width:992px) {
+	.description {
+		text-align: center;
+		color: white;
+		font-size: 1.1em;
+	}
+	.about {
+		height: 2000px;
+	}
+	#elbrus {
+		height: 30vh;
+		width: 40vh;
+	}
+}
+@media only screen and (min-width: 576px) and (max-width:767px) {
+	.description {
+		text-align: center;
+		color: white;
+	}
+	.about {
+		height: 2700px;
+	}
+	#elbrus {
+		height: 30vh;
+		width: 40vh;
+	}
+}
+@media only screen and (min-width: 478px) and (max-width:575px) {
+	.description {
+		text-align: center;
+		color: white;
+		font-size: 1.1em;
+	}
+	.about {
+		font-size: 0.85em;
+		height: 2900px;
+	}
+	#elbrus {
+		height: 30vh;
+		width: 40vh;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width:477px) {
+	.description {
+		text-align: center;
+		color: white;
+		font-size: 1em;
+	}
+	#elbrus {
+		height: 25vh;
+		width: 32vh;
+	}
+	.about {
+		height: 3400px;
+		font-size: 0.75em;
+	}
+}

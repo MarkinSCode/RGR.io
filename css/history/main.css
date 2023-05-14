@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+	padding: 0;
+}
+body {
+  font-family: raleway_f, sans-serif;
+  line-height: 2;
+  color: white;
+}
+/*1*/
+.main {
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	background-color: #7a7f85;
+	text-align: center;
+	display: grid;
+	grid-template-rows: 50% 50%;
+	align-items: center;
+	justify-content: center;
+}
+.description {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+#elbrus {
+	height: 40vh;
+	width: 50vh;
+}
+/*2*/
+.about {
+	height: 5000px;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	background-color: #7a7f85;
+	display: grid;
+	grid-template-columns: 99%;
+	grid-template-rows: 4% 5.5% 6.5% 6.5% 7.6% 7.6% 5% 6% 4.5% 8.4% 5% 6% 4% 6.6% 5% 10.6%;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	gap: 5px;
+	font-size: 0.9em;
+}
+.blockimg {
+	display: block;
+}
+.block { 
+	background-color: rgba(205, 214, 219, 0.3);
+    display: block;
+	height: 95%;
+	width: 90%;
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+	#intel {
+		width: 45%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width:991px) {
+	#intel {
+		width: 45%;
+	}
+	.about {
+	font-size: 0.8em;
+	}
+}
+@media only screen and (min-width: 576px) and (max-width:767px) {
+	#intel {
+		width: 65%;
+	}
+	.about {
+		height: 6500px;
+		font-size: 0.8em;
+		grid-template-rows: 4% 5.5% 6.5% 4.5% 7.6% 8.8% 5% 6% 4.5% 9.5% 3.5% 6% 4% 6.6% 5% 12%;
+		}
+		.description {
+			font-size: 1.3em;
+		}
+}
+@media only screen and (min-width: 478px) and (max-width:575px) {
+	#intel {
+		width: 65%;
+	}
+	.about {
+		height: 7000px;
+		font-size: 0.75em;
+		grid-template-rows: 4% 5.5% 6.5% 4.5% 7.6% 8.8% 5% 6% 4.5% 9.5% 3.5% 6% 4% 6.6% 5% 12%;
+		}
+		.description {
+			font-size: 1.1em;
+		}
+		#elbrus {
+			height: 30vh;
+			width: 40vh;
+		}
+}
+@media only screen and (min-width: 320px) and (max-width:477px) {
+	#intel {
+		width: 65%;
+	}
+	.about {
+		height: 7500px;
+		font-size: 0.7em;
+		grid-template-rows: 4% 3% 6.5% 2% 8.1% 10.8% 5% 6% 5.4% 11.5% 2% 6% 4% 6.6% 5% 13%;
+		}
+		.description {
+			font-size: 1.0em;
+		}
+		#elbrus {
+			height: 25vh;
+			width: 32vh;
+		}
+}
