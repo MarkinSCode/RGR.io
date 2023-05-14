@@ -29,17 +29,23 @@ body {
 	height: 40vh;
 	width: 50vh;
 }
+li {
+	margin-top: 5px;
+}
 /*2*/
+.block > h2 {
+	background: linear-gradient(70deg, rgb(0, 162, 255), rgb(18, 38, 92));
+}
 .about {
-	height: 5000px;
+	height: 5400px;
 	background-size: cover;
 	background-position: center;
 	background-blend-mode: multiply;
 	background-color: #7a7f85;
 	display: grid;
 	text-align: center;
-	grid-template-columns: 99%;
-	grid-template-rows: 4% 5.5% 6.5% 6.5% 7.6% 7.6% 5% 6% 4.5% 8.4% 5% 6% 4% 6.6% 5% 10.6%;
+	grid-template-columns: 60% 39%;
+	grid-template-rows: auto;
 	align-items: center;
 	justify-content: center;
 	justify-items: center;
@@ -48,49 +54,49 @@ body {
 }
 .blockimg {
 	display: block;
+	height: 95%;
+	width: 95%;
 }
 .block {
 	text-align: left;
 	background-color: rgba(205, 214, 219, 0.3);
     display: block;
 	height: 95%;
-	width: 90%;
+	width: 95%;
 }
-
+.blockimg > img {
+	max-width: 100%; 
+	max-height: 100%;
+	margin: 0;
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%)
+}
 @media only screen and (min-width: 992px) and (max-width:1199px) {
-	#intel {
-		width: 45%;
+	.about {
+		height: 5400px;
 	}
 }
 @media only screen and (min-width: 768px) and (max-width:991px) {
-	#intel {
-		width: 45%;
-	}
 	.about {
-	font-size: 0.8em;
+	height: 6500px;
 	}
 }
 @media only screen and (min-width: 576px) and (max-width:767px) {
-	#intel {
-		width: 65%;
-	}
 	.about {
-		height: 6500px;
-		font-size: 0.8em;
-		grid-template-rows: 4% 5.5% 6.5% 4.5% 7.6% 8.8% 5% 6% 4.5% 9.5% 3.5% 6% 4% 6.6% 5% 12%;
+		height: 9800px;
+		grid-template-columns: 99%;
+		grid-template-rows: auto;	
 		}
 		.description {
 			font-size: 1.3em;
 		}
 }
 @media only screen and (min-width: 478px) and (max-width:575px) {
-	#intel {
-		width: 65%;
-	}
 	.about {
-		height: 7000px;
-		font-size: 0.75em;
-		grid-template-rows: 4% 5.5% 6.5% 4.5% 7.6% 8.8% 5% 6% 4.5% 9.5% 3.5% 6% 4% 6.6% 5% 12%;
+		height: 10200px;
+		grid-template-columns: 99%;
+		grid-template-rows: auto;	
 		}
 		.description {
 			font-size: 1.1em;
@@ -101,13 +107,10 @@ body {
 		}
 }
 @media only screen and (min-width: 320px) and (max-width:477px) {
-	#intel {
-		width: 65%;
-	}
 	.about {
-		height: 7500px;
-		font-size: 0.7em;
-		grid-template-rows: 4% 3% 6.5% 2% 8.1% 10.8% 5% 6% 5.4% 11.5% 2% 6% 4% 6.6% 5% 13%;
+		height: 12500px;
+		grid-template-columns: 99%;
+		grid-template-rows: auto;	
 		}
 		.description {
 			font-size: 1.0em;

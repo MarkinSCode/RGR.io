@@ -39,12 +39,11 @@ body {
 	text-align: left;
 	display: grid;
 	grid-template-columns: 30% 69%;
-	grid-template-rows: 19% 19% 19% 19% 19%;
+	grid-template-rows: auto;
 	align-items: center;
 	justify-content: center;
 	justify-items: center;
 	gap: 3px;
-	font-size: 0.9em;
 }
 .block { 
 	background-color: rgba(205, 214, 219, 0.3);
@@ -63,31 +62,42 @@ body {
 	margin: 0;
 	position: absolute;
 	top: 50%;
-	transform: translate(2%, -50%)
+	transform: translate(-50%, -50%);
+	left: 50%;
+	max-width: 100%; 
+	max-height: 100%;
 }
-@media only screen and (min-width: 1200px) {
-	.blockimg > img {
-		max-height: 100%;
-	}	
+h2 {
+	background: linear-gradient(70deg, rgb(0, 158, 97), rgb(10, 61, 36));
 }
+
 @media only screen and (min-width: 992px) and (max-width:1199px) {
 	.about {
-		height: 3800px;
+		height: 4700px;
 	}	
 }
 @media only screen and (min-width: 768px) and (max-width:991px) {
 	.about {
-		height: 4500px;
+		grid-template-columns: 99%;
+		height: 5500px;
+	}
+	.blockimg { 
+		background: none;
 	}	
 }
 @media only screen and (min-width: 576px) and (max-width:767px) {
 	.about {
+		grid-template-columns: 99%;
 		height: 6300px;
+	}
+	.blockimg { 
+		background: none;
 	}	
 }
 @media only screen and (min-width: 478px) and (max-width:575px) {
 	.about {
 		height: 7500px;
+		grid-template-columns: 99%;
 	}	
 	.description {
 		text-align: center;
@@ -98,6 +108,9 @@ body {
 		height: 30vh;
 		width: 40vh;
 	}
+	.blockimg { 
+		background: none;
+	}	
 }
 @media only screen and (min-width: 320px) and (max-width:477px) {
 	.description {
@@ -106,11 +119,15 @@ body {
 		font-size: 1.1em;
 	}
 	.about {
-		height: 7000px;
-		font-size: 0.7em;
+		height: 7600px;
+		grid-template-columns: 99%;
+		font-size: 0.9em;
 	}	
 	#elbrus {
 		height: 25vh;
 		width: 32vh;
 	}
+	.blockimg { 
+		background: none;
+	}	
 }

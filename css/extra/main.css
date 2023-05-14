@@ -29,6 +29,9 @@ body {
 	height: 40vh;
 	width: 50vh;
 }
+h2 {
+	background: linear-gradient(70deg, rgb(224, 141, 31), rgb(29, 9, 9));
+}
 /*2*/
 .about {
 	height: 1760px;
