@@ -19,6 +19,11 @@ body {
 	grid-template-rows: 50% 50%;
 	align-items: center;
 	justify-content: center;
+	text-shadow: 
+	2px 0 2px #000, 
+	0 2px 2px #000, 
+	-2px 0 2px #000, 
+	0 -2px 2px #000;
 }
 .description {
     text-align: center;
@@ -112,13 +117,34 @@ body {
 .compability > h2 {
 	background: none;
 }
+footer {
+	background: linear-gradient(149deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 42%, rgb(21, 255, 0) 72%, rgb(0, 247, 0) 100%);
+    animation: gradient 10s infinite linear;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 100px;
+	background-size: 400%;
+}
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
 @media only screen and (min-width: 1200px) {
 	.img4 > img {	
 	display: block;
 	width: 100%;
 }
 h2 {
-	background: linear-gradient(70deg, rgb(0, 162, 255), rgb(18, 38, 92));
+	background-color: rgb(0, 162, 255);
 }
 .img2 {	
     display: block;
