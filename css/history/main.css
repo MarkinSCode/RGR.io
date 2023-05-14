@@ -37,6 +37,7 @@ body {
 	background-blend-mode: multiply;
 	background-color: #7a7f85;
 	display: grid;
+	text-align: center;
 	grid-template-columns: 99%;
 	grid-template-rows: 4% 5.5% 6.5% 6.5% 7.6% 7.6% 5% 6% 4.5% 8.4% 5% 6% 4% 6.6% 5% 10.6%;
 	align-items: center;
@@ -48,7 +49,8 @@ body {
 .blockimg {
 	display: block;
 }
-.block { 
+.block {
+	text-align: left;
 	background-color: rgba(205, 214, 219, 0.3);
     display: block;
 	height: 95%;
