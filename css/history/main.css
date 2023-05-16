@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body {
-  font-family: raleway_f, sans-serif;
+  font-family: sans-serif;
   line-height: 2;
   color: white;
 }
@@ -26,7 +26,6 @@ body {
 .description {
     text-align: center;
     color: white;
-    font-size: 1.5em;
 }
 #elbrus {
 	height: 40vh;
@@ -40,20 +39,20 @@ li {
 	background: linear-gradient(70deg, rgb(0, 162, 255), rgb(18, 38, 92));
 }
 .about {
-	height: 5400px;
+	height: auto;
 	background-size: cover;
 	background-position: center;
 	background-blend-mode: multiply;
 	background-color: #7a7f85;
 	display: grid;
 	text-align: center;
-	grid-template-columns: 60% 39%;
+	grid-template-columns: 60% 40%;
 	grid-template-rows: auto;
 	align-items: center;
 	justify-content: center;
 	justify-items: center;
-	gap: 5px;
-	font-size: 0.9em;
+	padding: 20px;
+	gap: 20px;
 }
 .blockimg {
 	display: block;
@@ -64,8 +63,8 @@ li {
 	text-align: left;
 	background-color: rgba(205, 214, 219, 0.3);
     display: block;
-	height: 95%;
-	width: 95%;
+	height: 100%;
+	width: 100%;
 }
 .blockimg > img {
 	max-width: 100%; 
@@ -75,72 +74,30 @@ li {
 	top: 50%;
 	transform: translate(0%, -50%)
 }
-footer {
-	background: linear-gradient(149deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 42%, rgb(21, 255, 0) 72%, rgb(0, 247, 0) 100%);
-    animation: gradient 10s infinite linear;
-	text-align: center;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	height: 100px;
-	background-size: 400%;
-}
-@keyframes gradient {
-    0% {
-        background-position: 80% 0%;
-    }
-    50% {
-        background-position: 20% 100%;
-    }
-    100% {
-        background-position: 80% 0%;
-    }
-}
 @media only screen and (min-width: 992px) and (max-width:1199px) {
-	.about {
-		height: 5400px;
-	}
 }
 @media only screen and (min-width: 768px) and (max-width:991px) {
-	.about {
-	height: 6500px;
-	}
 }
 @media only screen and (min-width: 576px) and (max-width:767px) {
 	.about {
-		height: 9800px;
 		grid-template-columns: 99%;
-		grid-template-rows: auto;	
-		}
-		.description {
-			font-size: 1.3em;
-		}
+	}
 }
 @media only screen and (min-width: 478px) and (max-width:575px) {
 	.about {
-		height: 10200px;
 		grid-template-columns: 99%;
-		grid-template-rows: auto;	
-		}
-		.description {
-			font-size: 1.1em;
-		}
-		#elbrus {
-			height: 30vh;
-			width: 40vh;
-		}
+	}
+	#elbrus {
+		height: 30vh;
+		width: 40vh;
+	}
 }
 @media only screen and (min-width: 320px) and (max-width:477px) {
 	.about {
-		height: 12500px;
-		grid-template-columns: 99%;
-		grid-template-rows: auto;	
-		}
-		.description {
-			font-size: 1.0em;
-		}
-		#elbrus {
-			height: 25vh;
-			width: 32vh;
-		}
+		grid-template-columns: 99%;	
+	}
+	#elbrus {
+		height: 25vh;
+		width: 32vh;
+	}
 }

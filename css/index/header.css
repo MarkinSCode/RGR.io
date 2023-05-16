@@ -1,5 +1,5 @@
 header {
-	background: transparent;
+	background-color: rgba(126, 126, 126, 0.486);
 	transition: background 0.4s ease;  
   position: fixed; 
   top: 0;  
@@ -13,18 +13,17 @@ header.fixed {
 }
 header a {
   float: left;
-  color: rgb(10, 169, 243);
+  color: rgb(0, 217, 255);
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
-  text-shadow: 
+  /* text-shadow: 
   1px 0 1px #000, 
   0 1px 1px #000, 
   -1px 0 1px #000, 
-  0 -1px 1px #000;
+  0 -1px 1px #000; */
 }
 header.fixed a {
 	text-shadow: none;
@@ -45,7 +44,7 @@ header a.active {
   background-color: dodgerblue;
   color: white;
 }
-@media screen and (max-width: 810px) 
+@media screen and (max-width: 991px) 
 {
   header a {
     float: none;
@@ -55,7 +54,7 @@ header a.active {
   .header-full {
     display: none;
   }
-  .dropdown:hover .header-full 
+  header:hover .header-full 
   {
     display: block;
   }

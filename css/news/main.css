@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body {
-  font-family: raleway_f, sans-serif;
+  font-family: sans-serif;
   line-height: 2;
   color: white;
 }
@@ -29,7 +29,6 @@ body {
 .description {
     text-align: center;
     color: white;
-    font-size: 1.5em;
 }
 #elbrus {
 	height: 40vh;
@@ -54,14 +53,14 @@ body {
 .block { 
 	background-color: rgba(205, 214, 219, 0.3);
     display: block;
-	height: 95%;
-	width: 90%;
+	height: 100%;
+	width: 100%;
 }
 .blockimg { 
 	background-color: rgba(205, 214, 219, 0.3);
 	display: block;
-	height: 95%;
-	width: 90%;
+	height: 100%;
+	width: 100%;
 	position: relative
 }
 .blockimg > img {
@@ -78,27 +77,6 @@ h2 {
 }
 im {
 	background: linear-gradient(70deg, rgb(0, 158, 137), rgb(8, 68, 63));
-}
-footer {
-	background: linear-gradient(149deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 42%, rgb(21, 255, 0) 72%, rgb(0, 247, 0) 100%);
-    animation: gradient 10s infinite linear;
-	text-align: center;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	height: 100px;
-	background-size: 400%;
-}
-@keyframes gradient {
-    0% {
-        background-position: 80% 0%;
-    }
-    50% {
-        background-position: 20% 100%;
-    }
-    100% {
-        background-position: 80% 0%;
-    }
 }
 @media only screen and (min-width: 992px) and (max-width:1199px) {
 	.about {
@@ -131,7 +109,6 @@ footer {
 	.description {
 		text-align: center;
 		color: white;
-		font-size: 1.1em;
 	}
 	#elbrus {
 		height: 30vh;
@@ -145,12 +122,10 @@ footer {
 	.description {
 		text-align: center;
 		color: white;
-		font-size: 1.1em;
 	}
 	.about {
 		height: 7600px;
 		grid-template-columns: 99%;
-		font-size: 0.9em;
 	}	
 	#elbrus {
 		height: 25vh;
