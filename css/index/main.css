@@ -7,16 +7,14 @@ body {
   line-height: 2;
   color: white;
 }
-/*1*/
 .main {
+	background: linear-gradient(to right, transparent, rgba(255, 185, 170, 0.713)), url("bg1.jpeg");
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
-	background-blend-mode: multiply;
-	background-color: #7a7f85;
 	text-align: center;
 	display: grid;
-	grid-template-rows: 50% 50%;
+	grid-template-rows: 80% 0%;
 	align-items: center;
 	justify-content: center;
 	text-shadow: 
@@ -33,7 +31,6 @@ body {
 	height: 40vh;
 	width: 50vh;
 }
-/*2*/
 .about {
 	height: auto;
 	background-size: cover;
@@ -49,14 +46,15 @@ body {
 	gap: 2%;
 }
 .block1 { 
-	background-color: rgba(205, 214, 219, 0.3);
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+    border-radius: 6px;
+    background: #00000049;
     display: block;
 	height: 100%;
 }
 .block1 > p, .block1 > h2, .block2 > ul, .block2 > h2, .block2 > p {
 	padding: 5px;
 }
-/*3*/
 .info {
 	height: 880px;
 	background-size: cover;
@@ -73,11 +71,11 @@ body {
 	gap: 2%;
 }
 .block2 {
-	background-color: rgba(205, 214, 219, 0.3);
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+    border-radius: 6px;
+    background: #00000049;
     display: block;
 }
-
-/*4*/
 .end {
 	height: 500px;
 	background-size: cover;
@@ -101,6 +99,7 @@ body {
 	background: none;
 }
 h2 {
+	border-radius: 6px;
 	background-color: rgb(0, 162, 255);
 }
 .img2 {
@@ -207,9 +206,6 @@ h2 {
 		grid-template-columns: 100%;
 		gap: 2.5%;
 	}
-	/* #i2 {
-		grid-row: 5/5;
-	} */
 	.info {
 		height: 1700px;
 		grid-template-columns: 100%;

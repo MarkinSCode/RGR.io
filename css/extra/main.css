@@ -19,7 +19,7 @@ body {
 	0 -2px 2px #000;
 	text-align: center;
 	display: grid;
-	grid-template-rows: 50% 50%;
+	grid-template-rows: 80% 0%;
 	align-items: center;
 	justify-content: center;
 }

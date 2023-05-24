@@ -9,6 +9,7 @@ body {
 }
 /*1*/
 .main {
+	background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.713)), url("big-171194-1.jpg");
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -19,7 +20,7 @@ body {
 	0 -2px 2px #000;
 	text-align: center;
 	display: grid;
-	grid-template-rows: 50% 50%;
+	grid-template-rows: 80% 0%;
 	align-items: center;
 	justify-content: center;
 }
